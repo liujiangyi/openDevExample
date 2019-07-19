@@ -1,14 +1,5 @@
 #include "gt9147_iic.h"
 #include "hal.h"
-#include "bsp.h"
-
-/*
-#define CT_IIC_SCL    PBout(1) 			//SCL     
-#define CT_IIC_SDA    PFout(9) 			//SDA	 
-#define CT_READ_SDA   PFin(9)  			//输入SDA 
-*/
-
-
 
 //电容触摸芯片IIC接口初始化
 void CT_IIC_Init ( void )

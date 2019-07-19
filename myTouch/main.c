@@ -1,7 +1,7 @@
 #include "stm32f10x.h"
 #include  "led.h"
 #include "hal.h"
-#include "bsp.h"
+#include "bsp_gpio_common.h"
 #include "usart.h"
 
 int main ( void )
@@ -13,6 +13,7 @@ int main ( void )
 
     delay_ms(100);
     printf("power on\n");
+
     while ( 1 )
     {
         GPIO_SetBits ( GPIOB, GPIO_Pin_5 );

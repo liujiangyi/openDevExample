@@ -1,17 +1,7 @@
 #ifndef _GT9147_IIC_H_
 #define _GT9147_IIC_H_
 #include <stdint.h>
-
-/*
-//IO方向设置
-#define CT_SDA_IN()  {GPIOF->CRH&=0XFFFFFF0F;GPIOF->CRH|=8<<4;}
-#define CT_SDA_OUT() {GPIOF->CRH&=0XFFFFFF0F;GPIOF->CRH|=3<<4;}
-
-//IO操作函数	 
-#define CT_IIC_SCL    PBout(1) 			//SCL     
-#define CT_IIC_SDA    PFout(9) 			//SDA	 
-#define CT_READ_SDA   PFin(9)  			//输入SDA 
-*/
+#include "bsp_gpio_common.h"
 
 #define CT_IIC_SCK_PORT	    GPIOB
 #define CT_IIC_SCK_PIN	    GPIO_Pin_1
