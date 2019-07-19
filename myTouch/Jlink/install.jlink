@@ -1,0 +1,5 @@
+r
+loadfile app.hex
+r
+g
+exit
