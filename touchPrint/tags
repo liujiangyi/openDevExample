@@ -711,21 +711,21 @@ AT24C16	24cxx.h	21;"	d
 AT24C256	24cxx.h	25;"	d
 AT24C32	24cxx.h	22;"	d
 AT24C64	24cxx.h	23;"	d
-AT24CXX_Check	24cxx.c	/^u8 AT24CXX_Check(void)$/;"	f	signature:(void)
+AT24CXX_Check	24cxx.c	/^u8 AT24CXX_Check ( void )$/;"	f	signature:( void )
 AT24CXX_Check	24cxx.h	/^u8 AT24CXX_Check(void);  \/\/检查器件$/;"	p	signature:(void)
-AT24CXX_Init	24cxx.c	/^void AT24CXX_Init(void)$/;"	f	signature:(void)
+AT24CXX_Init	24cxx.c	/^void AT24CXX_Init ( void )$/;"	f	signature:( void )
 AT24CXX_Init	24cxx.h	/^void AT24CXX_Init(void); \/\/初始化IIC$/;"	p	signature:(void)
-AT24CXX_Read	24cxx.c	/^void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead)$/;"	f	signature:(u16 ReadAddr,u8 *pBuffer,u16 NumToRead)
+AT24CXX_Read	24cxx.c	/^void AT24CXX_Read ( u16 ReadAddr, u8 *pBuffer, u16 NumToRead )$/;"	f	signature:( u16 ReadAddr, u8 *pBuffer, u16 NumToRead )
 AT24CXX_Read	24cxx.h	/^void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead);   	\/\/从指定地址开始读出指定长度的数据$/;"	p	signature:(u16 ReadAddr,u8 *pBuffer,u16 NumToRead)
-AT24CXX_ReadLenByte	24cxx.c	/^u32 AT24CXX_ReadLenByte(u16 ReadAddr,u8 Len)$/;"	f	signature:(u16 ReadAddr,u8 Len)
+AT24CXX_ReadLenByte	24cxx.c	/^u32 AT24CXX_ReadLenByte ( u16 ReadAddr, u8 Len )$/;"	f	signature:( u16 ReadAddr, u8 Len )
 AT24CXX_ReadLenByte	24cxx.h	/^u32 AT24CXX_ReadLenByte(u16 ReadAddr,u8 Len);					\/\/指定地址开始读取指定长度数据$/;"	p	signature:(u16 ReadAddr,u8 Len)
-AT24CXX_ReadOneByte	24cxx.c	/^u8 AT24CXX_ReadOneByte(u16 ReadAddr)$/;"	f	signature:(u16 ReadAddr)
+AT24CXX_ReadOneByte	24cxx.c	/^u8 AT24CXX_ReadOneByte ( u16 ReadAddr )$/;"	f	signature:( u16 ReadAddr )
 AT24CXX_ReadOneByte	24cxx.h	/^u8 AT24CXX_ReadOneByte(u16 ReadAddr);							\/\/指定地址读取一个字节$/;"	p	signature:(u16 ReadAddr)
-AT24CXX_Write	24cxx.c	/^void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite)$/;"	f	signature:(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite)
+AT24CXX_Write	24cxx.c	/^void AT24CXX_Write ( u16 WriteAddr, u8 *pBuffer, u16 NumToWrite )$/;"	f	signature:( u16 WriteAddr, u8 *pBuffer, u16 NumToWrite )
 AT24CXX_Write	24cxx.h	/^void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite);	\/\/从指定地址开始写入指定长度的数据$/;"	p	signature:(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite)
-AT24CXX_WriteLenByte	24cxx.c	/^void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len)$/;"	f	signature:(u16 WriteAddr,u32 DataToWrite,u8 Len)
+AT24CXX_WriteLenByte	24cxx.c	/^void AT24CXX_WriteLenByte ( u16 WriteAddr, u32 DataToWrite, u8 Len )$/;"	f	signature:( u16 WriteAddr, u32 DataToWrite, u8 Len )
 AT24CXX_WriteLenByte	24cxx.h	/^void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len);\/\/指定地址开始写入指定长度的数据$/;"	p	signature:(u16 WriteAddr,u32 DataToWrite,u8 Len)
-AT24CXX_WriteOneByte	24cxx.c	/^void AT24CXX_WriteOneByte(u16 WriteAddr,u8 DataToWrite)$/;"	f	signature:(u16 WriteAddr,u8 DataToWrite)
+AT24CXX_WriteOneByte	24cxx.c	/^void AT24CXX_WriteOneByte ( u16 WriteAddr, u8 DataToWrite )$/;"	f	signature:( u16 WriteAddr, u8 DataToWrite )
 AT24CXX_WriteOneByte	24cxx.h	/^void AT24CXX_WriteOneByte(u16 WriteAddr,u8 DataToWrite);		\/\/指定地址写入一个字节$/;"	p	signature:(u16 WriteAddr,u8 DataToWrite)
 ATACMD_BitNumber	STM32F10x_FWLib/src/stm32f10x_sdio.c	65;"	d	file:
 BACK_COLOR	lcd.c	/^u16 BACK_COLOR = 0xFFFF; \/\/背景色$/;"	v
@@ -2564,24 +2564,24 @@ CSR_TIF_BB	STM32F10x_FWLib/src/stm32f10x_bkp.c	70;"	d	file:
 CSR_TPIE_BB	STM32F10x_FWLib/src/stm32f10x_bkp.c	66;"	d	file:
 CSR_TSOM_BB	STM32F10x_FWLib/src/stm32f10x_cec.c	67;"	d	file:
 CSSON_BitNumber	STM32F10x_FWLib/src/stm32f10x_rcc.c	71;"	d	file:
-CT_Delay	ctiic.c	/^void CT_Delay(void)$/;"	f	signature:(void)
-CT_IIC_Ack	ctiic.c	/^void CT_IIC_Ack(void)$/;"	f	signature:(void)
+CT_Delay	ctiic.c	/^void CT_Delay ( void )$/;"	f	signature:( void )
+CT_IIC_Ack	ctiic.c	/^void CT_IIC_Ack ( void )$/;"	f	signature:( void )
 CT_IIC_Ack	ctiic.h	/^void CT_IIC_Ack(void);					\/\/IIC发送ACK信号$/;"	p	signature:(void)
-CT_IIC_Init	ctiic.c	/^void CT_IIC_Init(void)$/;"	f	signature:(void)
+CT_IIC_Init	ctiic.c	/^void CT_IIC_Init ( void )$/;"	f	signature:( void )
 CT_IIC_Init	ctiic.h	/^void CT_IIC_Init(void);                	\/\/初始化IIC的IO口				 $/;"	p	signature:(void)
-CT_IIC_NAck	ctiic.c	/^void CT_IIC_NAck(void)$/;"	f	signature:(void)
+CT_IIC_NAck	ctiic.c	/^void CT_IIC_NAck ( void )$/;"	f	signature:( void )
 CT_IIC_NAck	ctiic.h	/^void CT_IIC_NAck(void);					\/\/IIC不发送ACK信号$/;"	p	signature:(void)
-CT_IIC_Read_Byte	ctiic.c	/^u8 CT_IIC_Read_Byte(unsigned char ack)$/;"	f	signature:(unsigned char ack)
+CT_IIC_Read_Byte	ctiic.c	/^u8 CT_IIC_Read_Byte ( unsigned char ack )$/;"	f	signature:( unsigned char ack )
 CT_IIC_Read_Byte	ctiic.h	/^u8 CT_IIC_Read_Byte(unsigned char ack);	\/\/IIC读取一个字节$/;"	p	signature:(unsigned char ack)
 CT_IIC_SCL	ctiic.h	22;"	d
 CT_IIC_SDA	ctiic.h	23;"	d
-CT_IIC_Send_Byte	ctiic.c	/^void CT_IIC_Send_Byte(u8 txd)$/;"	f	signature:(u8 txd)
+CT_IIC_Send_Byte	ctiic.c	/^void CT_IIC_Send_Byte ( u8 txd )$/;"	f	signature:( u8 txd )
 CT_IIC_Send_Byte	ctiic.h	/^void CT_IIC_Send_Byte(u8 txd);			\/\/IIC发送一个字节$/;"	p	signature:(u8 txd)
-CT_IIC_Start	ctiic.c	/^void CT_IIC_Start(void)$/;"	f	signature:(void)
+CT_IIC_Start	ctiic.c	/^void CT_IIC_Start ( void )$/;"	f	signature:( void )
 CT_IIC_Start	ctiic.h	/^void CT_IIC_Start(void);				\/\/发送IIC开始信号$/;"	p	signature:(void)
-CT_IIC_Stop	ctiic.c	/^void CT_IIC_Stop(void)$/;"	f	signature:(void)
+CT_IIC_Stop	ctiic.c	/^void CT_IIC_Stop ( void )$/;"	f	signature:( void )
 CT_IIC_Stop	ctiic.h	/^void CT_IIC_Stop(void);	  				\/\/发送IIC停止信号$/;"	p	signature:(void)
-CT_IIC_Wait_Ack	ctiic.c	/^u8 CT_IIC_Wait_Ack(void)$/;"	f	signature:(void)
+CT_IIC_Wait_Ack	ctiic.c	/^u8 CT_IIC_Wait_Ack ( void )$/;"	f	signature:( void )
 CT_IIC_Wait_Ack	ctiic.h	/^u8 CT_IIC_Wait_Ack(void); 				\/\/IIC等待ACK信号$/;"	p	signature:(void)
 CT_MAX_TOUCH	touch.h	22;"	d
 CT_READ_SDA	ctiic.h	24;"	d
@@ -2834,7 +2834,7 @@ DCTRL_RWMOD_BB	STM32F10x_FWLib/src/stm32f10x_sdio.c	85;"	d	file:
 DCTRL_RWSTART_BB	STM32F10x_FWLib/src/stm32f10x_sdio.c	77;"	d	file:
 DCTRL_RWSTOP_BB	STM32F10x_FWLib/src/stm32f10x_sdio.c	81;"	d	file:
 DCTRL_SDIOEN_BB	STM32F10x_FWLib/src/stm32f10x_sdio.c	89;"	d	file:
-DEVICE	Makefile	/^DEVICE=STM32F072R8$/;"	m
+DEVICE	Makefile	/^DEVICE=STM32F103ze$/;"	m
 DFT_SCAN_DIR	lcd.h	125;"	d
 DFU_ENC	Makefile	/^DFU_ENC=@Utils\/YN622N-TRX-I_dfu_encrypt.exe$/;"	m
 DHR12L1	stm32f10x.h	/^  __IO uint32_t DHR12L1;$/;"	m	struct:__anon14	access:public
@@ -4948,9 +4948,11 @@ FW_ENC	Makefile	/^FW_ENC=@Utils\/YN622N-TRX-I_fw_encrypt.exe$/;"	m
 FW_FILE_VER	Makefile	/^FW_FILE_VER:=0x02$/;"	m
 FlagStatus	stm32f10x.h	/^typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;$/;"	t	typeref:enum:__anon3
 FunctionalState	stm32f10x.h	/^typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;$/;"	t	typeref:enum:__anon4
-G9147_INT_EXTI_IRQ	bsp.h	6;"	d
-G9147_INT_EXTI_LINE	bsp.h	4;"	d
-G9147_INT_EXTI_TRIGGER	bsp.h	5;"	d
+G9147_INT_EXIT_PIN_SRC	bsp.h	5;"	d
+G9147_INT_EXIT_PORT_SRC	bsp.h	4;"	d
+G9147_INT_EXTI_IRQ	bsp.h	8;"	d
+G9147_INT_EXTI_LINE	bsp.h	6;"	d
+G9147_INT_EXTI_TRIGGER	bsp.h	7;"	d
 GBLUE	lcd.h	133;"	d
 GEN_INSTALL_JLINK	Makefile	/^GEN_INSTALL_JLINK=echo -e "r\\nloadfile $^\\nr\\ng\\nexit" $/;"	m
 GPIOA	stm32f10x.h	1408;"	d
@@ -5352,6 +5354,7 @@ GT_TP3_REG	gt9147.h	38;"	d
 GT_TP4_REG	gt9147.h	39;"	d
 GT_TP5_REG	gt9147.h	40;"	d
 HCLK_Frequency	STM32F10x_FWLib/inc/stm32f10x_rcc.h	/^  uint32_t HCLK_Frequency;    \/*!< returns HCLK clock frequency expressed in Hz *\/$/;"	m	struct:__anon62	access:public
+HEADCOLOR	image2lcd.h	/^}HEADCOLOR; $/;"	t	typeref:struct:_HEADCOLOR
 HSEStartUp_TimeOut	stm32f10x.h	527;"	d
 HSE_STARTUP_TIMEOUT	stm32f10x.h	128;"	d
 HSE_VALUE	stm32f10x.h	117;"	d
@@ -5666,24 +5669,24 @@ IDR	stm32f10x.h	/^  __IO uint8_t  IDR;$/;"	m	struct:__anon13	access:public
 IER	stm32f10x.h	/^  __IO uint32_t IER;$/;"	m	struct:__anon11	access:public
 IE_BitNumber	STM32F10x_FWLib/src/stm32f10x_cec.c	59;"	d	file:
 IFCR	stm32f10x.h	/^  __IO uint32_t IFCR;$/;"	m	struct:__anon17	access:public
-IIC_Ack	myiic.c	/^void IIC_Ack(void)$/;"	f	signature:(void)
+IIC_Ack	myiic.c	/^void IIC_Ack ( void )$/;"	f	signature:( void )
 IIC_Ack	myiic.h	/^void IIC_Ack(void);					\/\/IIC发送ACK信号$/;"	p	signature:(void)
-IIC_Init	myiic.c	/^void IIC_Init(void)$/;"	f	signature:(void)
+IIC_Init	myiic.c	/^void IIC_Init ( void )$/;"	f	signature:( void )
 IIC_Init	myiic.h	/^void IIC_Init(void);                \/\/初始化IIC的IO口				 $/;"	p	signature:(void)
-IIC_NAck	myiic.c	/^void IIC_NAck(void)$/;"	f	signature:(void)
+IIC_NAck	myiic.c	/^void IIC_NAck ( void )$/;"	f	signature:( void )
 IIC_NAck	myiic.h	/^void IIC_NAck(void);				\/\/IIC不发送ACK信号$/;"	p	signature:(void)
-IIC_Read_Byte	myiic.c	/^u8 IIC_Read_Byte(unsigned char ack)$/;"	f	signature:(unsigned char ack)
+IIC_Read_Byte	myiic.c	/^u8 IIC_Read_Byte ( unsigned char ack )$/;"	f	signature:( unsigned char ack )
 IIC_Read_Byte	myiic.h	/^u8 IIC_Read_Byte(unsigned char ack);\/\/IIC读取一个字节$/;"	p	signature:(unsigned char ack)
 IIC_Read_One_Byte	myiic.h	/^u8 IIC_Read_One_Byte(u8 daddr,u8 addr);	  $/;"	p	signature:(u8 daddr,u8 addr)
 IIC_SCL	myiic.h	22;"	d
 IIC_SDA	myiic.h	23;"	d
-IIC_Send_Byte	myiic.c	/^void IIC_Send_Byte(u8 txd)$/;"	f	signature:(u8 txd)
+IIC_Send_Byte	myiic.c	/^void IIC_Send_Byte ( u8 txd )$/;"	f	signature:( u8 txd )
 IIC_Send_Byte	myiic.h	/^void IIC_Send_Byte(u8 txd);			\/\/IIC发送一个字节$/;"	p	signature:(u8 txd)
-IIC_Start	myiic.c	/^void IIC_Start(void)$/;"	f	signature:(void)
+IIC_Start	myiic.c	/^void IIC_Start ( void )$/;"	f	signature:( void )
 IIC_Start	myiic.h	/^void IIC_Start(void);				\/\/发送IIC开始信号$/;"	p	signature:(void)
-IIC_Stop	myiic.c	/^void IIC_Stop(void)$/;"	f	signature:(void)
+IIC_Stop	myiic.c	/^void IIC_Stop ( void )$/;"	f	signature:( void )
 IIC_Stop	myiic.h	/^void IIC_Stop(void);	  			\/\/发送IIC停止信号$/;"	p	signature:(void)
-IIC_Wait_Ack	myiic.c	/^u8 IIC_Wait_Ack(void)$/;"	f	signature:(void)
+IIC_Wait_Ack	myiic.c	/^u8 IIC_Wait_Ack ( void )$/;"	f	signature:( void )
 IIC_Wait_Ack	myiic.h	/^u8 IIC_Wait_Ack(void); 				\/\/IIC等待ACK信号$/;"	p	signature:(void)
 IIC_Write_One_Byte	myiic.h	/^void IIC_Write_One_Byte(u8 daddr,u8 addr,u8 data);$/;"	p	signature:(u8 daddr,u8 addr,u8 data)
 IMR	stm32f10x.h	/^  __IO uint32_t IMR;$/;"	m	struct:__anon19	access:public
@@ -6117,9 +6120,9 @@ KEY2	key.h	25;"	d
 KEY2_PRES	key.h	32;"	d
 KEYR	stm32f10x.h	/^  __IO uint32_t KEYR;$/;"	m	struct:__anon20	access:public
 KEYR2	stm32f10x.h	/^  __IO uint32_t KEYR2;$/;"	m	struct:__anon20	access:public
-KEY_Init	key.c	/^void KEY_Init(void) \/\/IO初始化$/;"	f	signature:(void)
+KEY_Init	key.c	/^void KEY_Init ( void ) \/\/IO初始化$/;"	f	signature:( void )
 KEY_Init	key.h	/^void KEY_Init(void);\/\/IO初始化$/;"	p	signature:(void)
-KEY_Scan	key.c	/^u8 KEY_Scan(u8 mode)$/;"	f	signature:(u8 mode)
+KEY_Scan	key.c	/^u8 KEY_Scan ( u8 mode )$/;"	f	signature:( u8 mode )
 KEY_Scan	key.h	/^u8 KEY_Scan(u8);  	\/\/按键扫描函数					    $/;"	p	signature:(u8)
 KR	stm32f10x.h	/^  __IO uint32_t KR;$/;"	m	struct:__anon30	access:public
 KR_KEY_Enable	STM32F10x_FWLib/src/stm32f10x_iwdg.c	50;"	d	file:
@@ -9742,6 +9745,13 @@ WWDG_TypeDef	stm32f10x.h	/^} WWDG_TypeDef;$/;"	t	typeref:struct:__anon38
 YELLOW	lcd.h	138;"	d
 YN_FW_GEN	Makefile	/^YN_FW_GEN=ynfw_gen.py$/;"	m
 _BSP_H_	bsp.h	2;"	d
+_HEADCOLOR	image2lcd.h	/^__packed typedef struct _HEADCOLOR$/;"	s
+_HEADCOLOR::gray	image2lcd.h	/^   unsigned char gray;$/;"	m	struct:_HEADCOLOR	access:public
+_HEADCOLOR::h	image2lcd.h	/^   unsigned short h;$/;"	m	struct:_HEADCOLOR	access:public
+_HEADCOLOR::is565	image2lcd.h	/^   unsigned char is565;$/;"	m	struct:_HEADCOLOR	access:public
+_HEADCOLOR::rgb	image2lcd.h	/^   unsigned char rgb;$/;"	m	struct:_HEADCOLOR	access:public
+_HEADCOLOR::scan	image2lcd.h	/^   unsigned char scan;$/;"	m	struct:_HEADCOLOR	access:public
+_HEADCOLOR::w	image2lcd.h	/^   unsigned short w;$/;"	m	struct:_HEADCOLOR	access:public
 __24CXX_H	24cxx.h	2;"	d
 __ASM	core_cm3.c	28;"	d	file:
 __ASM	core_cm3.c	32;"	d	file:
@@ -9755,6 +9765,7 @@ __FLASH_H	w25qxx.h	2;"	d
 __FONT_H	font.h	2;"	d
 __FT5206_H	ft5206.h	2;"	d
 __GT9147_H	gt9147.h	2;"	d
+__IMAGE2LCD_H	image2lcd.h	2;"	d
 __INLINE	core_cm3.c	29;"	d	file:
 __INLINE	core_cm3.c	33;"	d	file:
 __INLINE	core_cm3.c	37;"	d	file:
@@ -10546,12 +10557,22 @@ dir	lcd.h	/^	u8  dir;			\/\/横屏还是竖屏控制：0，竖屏；1，横屏。	$/;"	m	struct:_
 fac_ms	delay.c	/^static u16 fac_ms=0;							\/\/ms延时倍乘数,在ucos下,代表每个节拍的ms数$/;"	v	file:
 fac_us	delay.c	/^static u8  fac_us=0;							\/\/us延时倍乘数			   $/;"	v	file:
 fputc	usart.c	/^int fputc ( int ch, FILE *f )$/;"	f	signature:( int ch, FILE *f )
+gImage_image1	image1.c	/^const unsigned char gImage_image1[103176] = { 0X08,0X08,0X40,0X01,0X40,0X01,$/;"	v
+gray	image2lcd.h	/^   unsigned char gray;$/;"	m	struct:_HEADCOLOR	access:public
 gui_draw_hline	main.c	/^void gui_draw_hline ( u16 x0, u16 y0, u16 len, u16 color )$/;"	f	signature:( u16 x0, u16 y0, u16 len, u16 color )
 gui_fill_circle	main.c	/^void gui_fill_circle ( u16 x0, u16 y0, u16 r, u16 color )$/;"	f	signature:( u16 x0, u16 y0, u16 r, u16 color )
+h	image2lcd.h	/^   unsigned short h;$/;"	m	struct:_HEADCOLOR	access:public
 handle	usart.c	/^    int handle;$/;"	m	struct:__FILE	file:	access:public
 height	lcd.h	/^	u16 height;			\/\/LCD 高度$/;"	m	struct:__anon1	access:public
 id	lcd.h	/^	u16 id;				\/\/LCD ID$/;"	m	struct:__anon1	access:public
+image_display	image2lcd.c	/^void image_display ( u16 x, u16 y, u8 * imgx )$/;"	f	signature:( u16 x, u16 y, u8 * imgx )
+image_display	image2lcd.h	/^void image_display(u16 x,u16 y,u8 * imgx);\/\/在指定位置显示图片$/;"	p	signature:(u16 x,u16 y,u8 * imgx)
+image_getcolor	image2lcd.c	/^u16 image_getcolor ( u8 mode, u8 *str )$/;"	f	signature:( u8 mode, u8 *str )
+image_getcolor	image2lcd.h	/^u16 image_getcolor(u8 mode,u8 *str);\/\/获取颜色$/;"	p	signature:(u8 mode,u8 *str)
+image_show	image2lcd.c	/^void image_show ( u16 xsta, u16 ysta, u16 xend, u16 yend, u8 scan, u8 *p )$/;"	f	signature:( u16 xsta, u16 ysta, u16 xend, u16 yend, u8 scan, u8 *p )
+image_show	image2lcd.h	/^void image_show(u16 xsta,u16 ysta,u16 xend,u16 yend,u8 scan,u8 *p);\/\/在指定区域开始显示图片$/;"	p	signature:(u16 xsta,u16 ysta,u16 xend,u16 yend,u8 scan,u8 *p)
 init	touch.h	/^	u8 (*init)(void);			\/\/初始化触摸屏控制器$/;"	m	struct:__anon74	access:public
+is565	image2lcd.h	/^   unsigned char is565;$/;"	m	struct:_HEADCOLOR	access:public
 lcd_draw_bline	main.c	/^void lcd_draw_bline ( u16 x1, u16 y1, u16 x2, u16 y2, u8 size, u16 color )$/;"	f	signature:( u16 x1, u16 y1, u16 x2, u16 y2, u8 size, u16 color )
 lcddev	lcd.c	/^_lcd_dev lcddev;$/;"	v
 main	main.c	/^int main ( void )$/;"	f	signature:( void )
@@ -10559,6 +10580,7 @@ my_abs	main.c	/^u16 my_abs ( u16 x1, u16 x2 )$/;"	f	signature:( u16 x1, u16 x2 )
 my_tp_scan	main.c	/^void my_tp_scan(void)$/;"	f	signature:(void)
 my_tp_scan	stm32f10x_it.c	/^void my_tp_scan(void);$/;"	p	file:	signature:(void)
 opt_delay	lcd.c	/^void opt_delay ( u8 i )$/;"	f	signature:( u8 i )
+rgb	image2lcd.h	/^   unsigned char rgb;$/;"	m	struct:_HEADCOLOR	access:public
 rtp_test	main.c	/^void rtp_test ( void )$/;"	f	signature:( void )
 s16	stm32f10x.h	/^typedef int16_t s16;$/;"	t
 s32	stm32f10x.h	/^typedef int32_t  s32;$/;"	t
@@ -10570,6 +10592,7 @@ sTxMailBox	stm32f10x.h	/^  CAN_TxMailBox_TypeDef sTxMailBox[3];$/;"	m	struct:__a
 sc16	stm32f10x.h	/^typedef const int16_t sc16;  \/*!< Read Only *\/$/;"	t
 sc32	stm32f10x.h	/^typedef const int32_t sc32;  \/*!< Read Only *\/$/;"	t
 sc8	stm32f10x.h	/^typedef const int8_t sc8;   \/*!< Read Only *\/$/;"	t
+scan	image2lcd.h	/^   unsigned char scan;$/;"	m	struct:_HEADCOLOR	access:public
 scan	touch.h	/^	u8 (*scan)(u8);				\/\/扫描触摸屏.0,屏幕扫描;1,物理坐标;	 $/;"	m	struct:__anon74	access:public
 setxcmd	lcd.h	/^	u16  setxcmd;		\/\/设置x坐标指令$/;"	m	struct:__anon1	access:public
 setycmd	lcd.h	/^	u16  setycmd;		\/\/设置y坐标指令 $/;"	m	struct:__anon1	access:public
@@ -10596,6 +10619,7 @@ vu8	stm32f10x.h	/^typedef __IO uint8_t  vu8;$/;"	t
 vuc16	stm32f10x.h	/^typedef __I uint16_t vuc16;  \/*!< Read Only *\/$/;"	t
 vuc32	stm32f10x.h	/^typedef __I uint32_t vuc32;  \/*!< Read Only *\/$/;"	t
 vuc8	stm32f10x.h	/^typedef __I uint8_t vuc8;   \/*!< Read Only *\/$/;"	t
+w	image2lcd.h	/^   unsigned short w;$/;"	m	struct:_HEADCOLOR	access:public
 width	lcd.h	/^	u16 width;			\/\/LCD 宽度$/;"	m	struct:__anon1	access:public
 wramcmd	lcd.h	/^	u16	wramcmd;		\/\/开始写gram指令$/;"	m	struct:__anon1	access:public
 x	touch.h	/^	u16 x[CT_MAX_TOUCH]; 		\/\/当前坐标$/;"	m	struct:__anon74	access:public

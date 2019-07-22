@@ -14,7 +14,8 @@
 #include "piclib.h"
 #include "string.h"
 #include "math.h"
-
+#include "image2lcd.h"
+extern const u8 gImage_image1[];//图片数据(包含信息头),存储在image1.c里面.
 /************************************************
   ALIENTEK战舰STM32开发板实验41
   图片显示 实验
@@ -57,6 +58,7 @@ u16 pic_get_tnum ( u8 *path )
 }
 int main ( void )
 {
+    HEADCOLOR *imginfo;
     u8 res;
     DIR picdir;	 		//图片目录
     FILINFO picfileinfo;//文件信息
@@ -83,6 +85,13 @@ int main ( void )
     f_mount ( fs[0], "0:", 1 ); 		//挂载SD卡
     f_mount ( fs[1], "1:", 1 ); 		//挂载FLASH.
     POINT_COLOR = RED;
+    imginfo = ( HEADCOLOR* ) gImage_image1;	//得到文件信息
+    image_display ( 0, 0, ( u8* ) gImage_image1 ); //?????????
+    while ( 1 )
+    {
+	delay_ms ( 1500 );
+	LED0 = !LED0;
+    }
     while ( font_init() ) 		//检查字库
     {
 	LCD_ShowString ( 30, 50, 200, 16, 16, "Font Error!" );

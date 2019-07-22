@@ -32,5 +32,4 @@ uint8_t CT_IIC_Wait_Ack(void); 				//IIC等待ACK信号
 void CT_IIC_Ack(void);					//IIC发送ACK信号
 void CT_IIC_NAck(void);					//IIC不发送ACK信号
 
-
 #endif

@@ -13,7 +13,6 @@ void CT_IIC_Init ( void )
     //sda pf9
     bsp_gpio_init ( CT_IIC_SDA_PORT, CT_IIC_SDA_PIN, GPIO_Mode_Out_PP, GPIO_Speed_50MHz );
     BSP_GPIO_SET_BIT ( CT_IIC_SDA_PORT, CT_IIC_SDA_PIN );
-
 }
 
 //产生IIC起始信号
@@ -88,6 +87,7 @@ void CT_IIC_Ack ( void )
     CT_Delay();
     CT_IIC_RESET_SCL();
 }
+
 //不产生ACK应答
 void CT_IIC_NAck ( void )
 {
@@ -100,6 +100,7 @@ void CT_IIC_NAck ( void )
     CT_Delay();
     CT_IIC_RESET_SCL();
 }
+
 //IIC发送一个字节
 //返回从机有无应答
 //1，有应答
@@ -124,6 +125,7 @@ void CT_IIC_Send_Byte ( uint8_t txd )
 	CT_Delay();
     }
 }
+
 //读1个字节，ack=1时，发送ACK，ack=0，发送nACK
 uint8_t CT_IIC_Read_Byte ( unsigned char ack )
 {

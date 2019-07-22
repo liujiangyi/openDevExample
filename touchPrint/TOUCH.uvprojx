@@ -479,6 +479,16 @@
               <FileType>1</FileType>
               <FilePath>.\stm32f10x_it.c</FilePath>
             </File>
+            <File>
+              <FileName>image1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\image1.c</FilePath>
+            </File>
+            <File>
+              <FileName>image2lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\image2lcd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

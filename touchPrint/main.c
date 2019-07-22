@@ -7,7 +7,9 @@
 #include "24cxx.h"
 #include "w25qxx.h"
 #include "touch.h"
+#include "image2lcd.h"
 
+extern const u8 gImage_image1[];//图片数据(包含信息头),存储在image1.c里面.
 /************************************************
   ALIENTEK战舰STM32开发板实验27
   触摸屏 实验
@@ -201,6 +203,9 @@ void ctp_test ( void )
 
 int main ( void )
 {
+    HEADCOLOR *imginfo;
+    u16 x=0,y=0;
+    imginfo=(HEADCOLOR*)gImage_image1;	//得到文件信息 
     delay_init();	    	 //延时函数初始化
     NVIC_PriorityGroupConfig ( NVIC_PriorityGroup_2 ); //设置中断优先级分组为组2：2位抢占优先级，2位响应优先级
 
@@ -221,8 +226,17 @@ int main ( void )
     if ( tp_dev.touchtype != 0XFF ) LCD_ShowString ( 60, 130, 200, 16, 16, "Press KEY0 to Adjust" ); //电阻屏才显示
     delay_ms ( 1500 );
     Load_Drow_Dialog();
-    if ( tp_dev.touchtype & 0X80 ) ctp_test();	//电容屏测试
+
+    image_display(x,y,(u8*)gImage_image1);//在指定地址显示图片
+    while (1)
+    {
+	delay_ms ( 1500 );
+	LED0 = !LED0;
+    }
+    /*
+       if ( tp_dev.touchtype & 0X80 ) ctp_test();	//电容屏测试
     else rtp_test(); 						//电阻屏测试
+    */
 }
 
 

@@ -1,0 +1,24 @@
+r
+loadfile $FW_FILE$
+r
+g
+exit
+sleep 100
+w4 0x40022004 0x45670123 // Unlock Flash registers
+w4 0x40022004 0xCDEF89AB
+w4 0x40022008 0x45670123 // Unlock Option Bytes
+w4 0x40022008 0xCDEF89AB
+w4 0x40022010 0x00000220 // Set Write and Erase bit to prepare Option Byte erase
+w4 0x40022010 0x00000260 // Trigger operation (Option Byte erase)
+sleep 500               // It is not possible to check the Status register in a commander file, therefore we 
+sleep 500               // just wait here a fixed amount of time
+w4 0x40022010 0x00000020 // Reset Write bit
+w4 0x40022010 0x00000000 // Reset Erase bit
+w4 0x40022010 0x00000080 // Set Flash lock. This step and two previous steps cannot be combined.
+sleep 1                  // We do not actually write the ROP/nROP bytes, because erased (0xFF) state already sets ROP to Level 1
+sleep 500               // It is not possible to check the Status register in a commander file, therefore we 
+sleep 500               // just wait here a fixed amount of time
+w4 0x40022010 0x00002210 // Trigger Option Byte Loader
+sleep 500               // It is not possible to check the Status register in a commander file, therefore we 
+sleep 500               // just wait here a fixed amount of time
+q

@@ -3,7 +3,7 @@ BINCP=bin_merge.exe
 BINENC=@bin_encrypt.exe
 STLINK_CLI=cmd /c 'C:\\Program Files (x86)\\STMicroelectronics\\STM32 ST-LINK Utility\\ST-LINK Utility\\ST-LINK_CLI.exe'
 
-DEVICE=STM32F072R8
+DEVICE=STM32F103ze
 JLINK=cmd /c 'D:\\Keil_v5\\ARM\\Segger\\JLink.exe -ExitOnError 1 -AutoConnect 1 -If swd -Device $(DEVICE) -Speed 4000'
 GEN_INSTALL_JLINK=echo -e "r\nloadfile $^\nr\ng\nexit" 
 
@@ -52,8 +52,8 @@ install: ./build/TOUCH.hex erase_mcu
 	 # $(JLINK) ./Jlink/install.jlink
 
 erase_mcu:
-	$(STLINK_CLI) -ME
-#         $(JLINK)  ./Jlink/erase.jlink
+	# $(STLINK_CLI) -ME
+	$(JLINK)  ./Jlink/erase.jlink
 
 read_hex:
 	$(STLINK_CLI) -Dump 0x0 0x20000 a.hex

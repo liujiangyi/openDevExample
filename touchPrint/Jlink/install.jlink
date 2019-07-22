@@ -1,0 +1,5 @@
+r
+loadfile YN968N-II.hex
+r
+g
+exit
