@@ -85,13 +85,6 @@ int main ( void )
     f_mount ( fs[0], "0:", 1 ); 		//挂载SD卡
     f_mount ( fs[1], "1:", 1 ); 		//挂载FLASH.
     POINT_COLOR = RED;
-    imginfo = ( HEADCOLOR* ) gImage_image1;	//得到文件信息
-    image_display ( 0, 0, ( u8* ) gImage_image1 ); //?????????
-    while ( 1 )
-    {
-	delay_ms ( 1500 );
-	LED0 = !LED0;
-    }
     while ( font_init() ) 		//检查字库
     {
 	LCD_ShowString ( 30, 50, 200, 16, 16, "Font Error!" );

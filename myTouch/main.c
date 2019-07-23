@@ -4,6 +4,7 @@
 #include "bsp_gpio_common.h"
 #include "usart.h"
 #include "gt9147.h"
+#include "lcd_driver.h"
 
 void led_process(void)
 {
@@ -28,13 +29,15 @@ void led_process(void)
 int main ( void )
 {
     HAL_Init();
-    uart_init(2000000);
+    uart_init(115200);
     LED_Init();
 
     delay_ms(100);
     printf("power on\n");
     GT9147_Init();
+    lcd_init();
 
+    LCD_ShowString ( 30, 50, 200, 16, 16, "hello!" );
     while ( 1 )
     {
 	led_process();

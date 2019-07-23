@@ -444,6 +444,11 @@
               <FileType>1</FileType>
               <FilePath>.\gt9147.c</FilePath>
             </File>
+            <File>
+              <FileName>lcd_driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lcd_driver.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
